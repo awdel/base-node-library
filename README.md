@@ -1,0 +1,1 @@
+Base project for a JavaScript Library
