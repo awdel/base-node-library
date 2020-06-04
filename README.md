@@ -1,4 +1,4 @@
-## Base project for a Node Library
+## Base build for a Node Library
 
 DEV
 ```
