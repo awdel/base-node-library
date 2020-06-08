@@ -1,15 +1,15 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
-module.exports = (env, argv) => {
+const init = async (env, argv) => {
     return {
-        entry: './src/js/index.js',
+        entry: './src/index.js',
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'js/scripts.js',
-            library: 'myLibrary',
-            libraryTarget: 'umd',
-            umdNamedDefine: true
+            //library: 'myLibrary',
+            //libraryTarget: 'umd',
+            //umdNamedDefine: true
         },
         devtool: argv.mode === 'development' ? 'source-map' : false,
         watch: argv.mode === 'development' ? true : false,
@@ -63,3 +63,4 @@ module.exports = (env, argv) => {
         ]
     };
 };
+module.exports = init;
