@@ -1,13 +1,17 @@
 {
   "name": "base-node-library",
   "version": "0.1.0",
+  "description": "Base project for a Node Library",
+  "author": "Adam Delaney",
   "contributors": [
     {
       "name": "Adam Delaney"
     }
   ],
-  "description": "Base project for a Node Library",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "build-dev": "webpack --config webpack.config.js --mode development",
     "build-prod": "webpack --config webpack.config.js --mode production"

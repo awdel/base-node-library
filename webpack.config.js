@@ -6,10 +6,7 @@ const init = async (env, argv) => {
         entry: './src/index.js',
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: 'js/scripts.js',
-            //library: 'myLibrary',
-            //libraryTarget: 'umd',
-            //umdNamedDefine: true
+            filename: 'js/scripts.js'
         },
         devtool: argv.mode === 'development' ? 'source-map' : false,
         watch: argv.mode === 'development' ? true : false,
